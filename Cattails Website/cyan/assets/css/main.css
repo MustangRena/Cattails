@@ -1643,7 +1643,7 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
+        margin: 0 auto;
 		width: 1400px;
 	}
 
@@ -2538,21 +2538,37 @@ input, select, textarea {
 /* Tweets */
 
 	#tweets {
-		position: relative;
-		padding: 4em 0em;
-        background-color: #888787;
+		display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 4rem 0rem;
+		background-color: #888787;
 		text-align: center;
 		color: #333131;
-        
         text-shadow: 1px 1px;
-        
-	}
+    }
 
 		#tweets .tweet {
-			display: block;
 			font-size: 2em;
 			line-height: 2em;
 		}
+
+        #tweets a {
+            display: block;
+            text-align: center;
+        }
+
+        #tweets a span {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 2rem;
+            padding: 25%;
+        }
+
+        #tweets .icon {
+            margin: 1rem auto 1rem auto;
+        }
 
 /* Contact */
 
